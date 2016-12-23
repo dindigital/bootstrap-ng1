@@ -1,0 +1,35 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CUT - Calculadora Aposentadoria</title>
+
+    <style>
+        a.active {
+            color: red
+        }
+    </style>
+</head>
+<html>
+<body ng-app="myapp">
+
+    <nav>
+        <ul>
+            <li>
+                <a ui-sref="home" ui-sref-active="active">Homepage</a>
+            </li>
+            <li>
+                <a ui-sref="about" ui-sref-active="active">About</a>
+            </li>
+            <li>
+                <a href="/#/23048203984" ui-sref-active="active">Rota inexistente</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div ui-view></div>
+
+    <script src="/assets/js/vendor.js"></script>
+    <script src="/assets/js/env.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
